@@ -50,3 +50,27 @@ const students =  [
 
 console.log([...students])
 console.log([...students].sort((a,b)=>a.age-b.age))
+console.log([...students].sort((a,b)=>a.name.toLowerCase()<b.name.toLowerCase() ? -1 : 1))
+console.log([...students][0].name.toUpperCase())
+console.log([...students][0].name.toLowerCase())
+
+
+// BUBBLE SORT
+
+const numbersArray = [88,1,50,6]
+
+for (let j=0; j<numbersArray.length;j++){
+
+    for (let i=0; i<numbersArray.length - 1; i++) {
+        if (numbersArray[i]>numbersArray[i+1]) {
+            [numbersArray[i],numbersArray[i+1]] =   [numbersArray[i+1],numbersArray[i]]
+            //  let temp = numbersArray[i+1]
+            //  numbersArray[i+1]=numbersArray[i]
+            //  numbersArray[i]=temp
+
+        }
+    }
+}
+
+
+console.log(numbersArray)
